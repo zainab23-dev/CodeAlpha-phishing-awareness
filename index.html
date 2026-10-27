@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phishing Awareness | CodeAlpha</title>
+<style>
+:root{--navy:#10243a;--blue:#176b87;--pale:#eef6f8;--green:#176b48;--red:#a83232;--ink:#172333}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,Segoe UI,Arial,sans-serif;color:var(--ink);background:#f4f7fa}
+header{background:linear-gradient(120deg,var(--navy),var(--blue));color:white;padding:38px 20px}
+header .wrap,main{max-width:960px;margin:auto}h1{margin:0 0 8px;font-size:clamp(2rem,5vw,3rem)}header p{max-width:720px;margin:0;color:#e7f4fa}
+main{padding:22px 16px 50px}.card{background:white;border:1px solid #dce5eb;border-radius:14px;padding:22px;margin:16px 0;box-shadow:0 5px 18px #10243a0a}
+h2{margin-top:0;color:var(--navy)}h3{margin-bottom:5px}.pill{display:inline-block;background:var(--pale);color:var(--blue);padding:3px 10px;border-radius:99px;font-size:.85rem;font-weight:700}
+.email{border:1px solid #d5dde4;border-radius:10px;padding:16px;background:#fbfcfd}.email strong{color:var(--red)}ul{padding-left:24px}.good{color:var(--green);font-weight:700}.bad{color:var(--red);font-weight:700}
+.question{border-top:1px solid #e2e8ed;padding:15px 0}.question:first-of-type{border:0}.question label{display:block;margin:7px 0;cursor:pointer}
+button{border:0;background:var(--blue);color:white;padding:11px 18px;border-radius:8px;font-weight:700;cursor:pointer}button:hover{filter:brightness(.9)}
+#result{margin-top:15px;padding:14px;border-radius:8px;background:var(--pale);display:none}.small{font-size:.92rem;color:#526273}footer{text-align:center;padding:20px;color:#607080}
+:focus-visible{outline:3px solid #f0b429;outline-offset:3px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<span class="pill">CODEALPHA • CYBERSECURITY AWARENESS</span>
+<h1>Spot the Phish</h1>
+<p>A practical mini-training to help you recognize phishing emails, fake websites, and social-engineering tactics before they put an account or organization at risk.</p>
+</div></header>
+<main>
+<section class="card">
+<h2>1. What is phishing?</h2>
+<p>Phishing is a social-engineering attack in which a message or website impersonates a trusted person or organization to trick someone into revealing information, opening a harmful file, sending money, or approving an account action.</p>
+<ul><li><b>Email phishing:</b> a deceptive message sent to many people.</li><li><b>Spear phishing:</b> a targeted message tailored to a particular person or team.</li><li><b>Smishing / vishing:</b> phishing through SMS or voice calls.</li><li><b>Business email compromise:</b> impersonation of a colleague, executive, or supplier to manipulate a payment or sensitive request.</li></ul>
+</section>
+<section class="card">
+<h2>2. Recognize the warning signs</h2>
+<ul>
+<li><b>Unexpected urgency:</b> “Your account will be closed in 10 minutes.”</li>
+<li><b>Sender mismatch:</b> the display name looks familiar, but the actual email domain is different.</li>
+<li><b>Suspicious links:</b> a link's displayed text does not match its real destination, or the domain has misspellings or extra words.</li>
+<li><b>Unexpected attachments:</b> especially files you were not expecting or files asking you to enable macros.</li>
+<li><b>Requests for secrets:</b> passwords, one-time codes, recovery codes, or payment details.</li>
+<li><b>Unusual payment or account changes:</b> verify through a separate, known channel.</li>
+</ul>
+<p class="small">HTTPS and a padlock only indicate an encrypted connection; they do not prove that a website is legitimate.</p>
+</section>
+<section class="card">
+<h2>3. Example: suspicious email</h2>
+<div class="email">
+<p><b>From:</b> “IT Helpdesk” &lt;helpdesk@company-account-security.example&gt;</p>
+<p><b>Subject:</b> <strong>URGENT: mailbox will be disabled today</strong></p>
+<p>Your mailbox is full. Sign in immediately using the link below to prevent account closure. Do not contact IT because this automated process must be completed now.</p>
+<p><u>Review mailbox now</u></p>
+<p class="small">Training example only. The example domain is reserved for documentation and is not a real login service.</p>
+</div>
+<h3>What should make you suspicious?</h3>
+<ul><li>The sender domain may not match the organization's real domain.</li><li>The message pressures the recipient to act immediately.</li><li>It discourages independent verification.</li><li>It asks the recipient to sign in through a message link.</li></ul>
+<p><b>Safer action:</b> do not click the link. Visit the organization's known website directly or contact the helpdesk using a trusted contact method. Report the message using your organization's approved process.</p>
+</section>
+<section class="card">
+<h2>4. Social engineering tactics</h2>
+<ul><li><b>Authority:</b> pretending to be a manager or IT administrator.</li><li><b>Fear:</b> threatening account suspension or disciplinary action.</li><li><b>Scarcity and urgency:</b> claiming an offer or deadline will expire immediately.</li><li><b>Familiarity:</b> impersonating a coworker, friend, or supplier.</li><li><b>Curiosity:</b> using a surprising document or sensational attachment.</li></ul>
+</section>
+<section class="card">
+<h2>5. Best practices</h2>
+<ul><li>Inspect the full sender address and the actual link destination before interacting.</li><li>Never share passwords, one-time codes, or recovery codes through email or chat.</li><li>Use a password manager and unique passwords; enable MFA or passkeys where available.</li><li>Verify payment changes and sensitive requests through a separate trusted channel.</li><li>Keep your browser, operating system, and security software updated.</li><li>Report suspicious messages promptly. If you already clicked or entered credentials, contact IT/security immediately and change affected credentials from a trusted device.</li></ul>
+</section>
+<section class="card" id="quiz">
+<h2>6. Knowledge check</h2>
+<p>Choose one answer for each question, then select <b>Check answers</b>.</p>
+<form id="quizForm">
+<div class="question"><b>1. An email says your account will close unless you sign in immediately. What is the safest first step?</b>
+<label><input type="radio" name="q1" value="a" required> Click the link quickly</label>
+<label><input type="radio" name="q1" value="b"> Open the official site independently and verify the alert</label>
+<label><input type="radio" name="q1" value="c"> Reply with your password</label></div>
+<div class="question"><b>2. Does HTTPS guarantee that a website is legitimate?</b>
+<label><input type="radio" name="q2" value="a" required> Yes, always</label>
+<label><input type="radio" name="q2" value="b"> No, it only protects the connection in transit</label>
+<label><input type="radio" name="q2" value="c"> Only on mobile phones</label></div>
+<div class="question"><b>3. A supplier emails new bank details. What should you do?</b>
+<label><input type="radio" name="q3" value="a" required> Pay immediately</label>
+<label><input type="radio" name="q3" value="b"> Reply to the same email asking if it is real</label>
+<label><input type="radio" name="q3" value="c"> Verify using a known phone number or separate trusted channel</label></div>
+<div class="question"><b>4. You entered your password on a suspicious page. What now?</b>
+<label><input type="radio" name="q4" value="a" required> Ignore it if nothing happened</label>
+<label><input type="radio" name="q4" value="b"> Contact IT/security and change the password from a trusted device</label>
+<label><input type="radio" name="q4" value="c"> Send the password to your colleague</label></div>
+<div class="question"><b>5. Which is a social-engineering warning sign?</b>
+<label><input type="radio" name="q5" value="a" required> A request to verify an unusual urgent payment secretly</label>
+<label><input type="radio" name="q5" value="b"> A routine message you expected and verified</label>
+<label><input type="radio" name="q5" value="c"> A known website opened from a bookmark</label></div>
+<button type="submit">Check answers</button>
+</form>
+<div id="result" role="status" aria-live="polite"></div>
+</section>
+</main>
+<footer>Educational project • CodeAlpha Cybersecurity Internship • Answers stay in this browser</footer>
+<script>
+const answers={q1:"b",q2:"b",q3:"c",q4:"b",q5:"a"};
+const explanations={
+q1:"Verify through the official site or a known contact channel instead of using the message link.",
+q2:"HTTPS encrypts the connection but does not establish that the site owner is trustworthy.",
+q3:"Confirm bank-detail changes using a previously known, independent contact method.",
+q4:"Report the incident promptly and change the exposed password from a trusted device; follow your organization's incident process.",
+q5:"Secrecy and pressure around an unusual payment are common social-engineering indicators."
+};
+document.getElementById("quizForm").addEventListener("submit",function(e){
+e.preventDefault();let score=0;const lines=[];
+for(const [q,a] of Object.entries(answers)){const chosen=this.querySelector('input[name="'+q+'"]:checked');if(chosen&&chosen.value===a)score++;lines.push("<li><b>"+q.toUpperCase()+":</b> "+explanations[q]+"</li>");}
+const box=document.getElementById("result");box.style.display="block";
+box.innerHTML="<h3>Your score: "+score+" / 5</h3><p>"+(score===5?"Excellent work! You identified all the safest responses.":"Review the explanations below and try again.")+"</p><ul>"+lines.join("")+"</ul>";
+});
+</script>
+</body>
+</html>
