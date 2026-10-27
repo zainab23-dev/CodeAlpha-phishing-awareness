@@ -1,4 +1,4 @@
-# Task 2 — Phishing Awareness Training
+ Phishing Awareness Training
 
 ## Objective
 Teach users to recognize phishing emails, fake websites, and social-engineering attempts.
